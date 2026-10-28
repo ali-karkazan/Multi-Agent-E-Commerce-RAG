@@ -259,7 +259,7 @@ def deploy(verbose: bool = False) -> None:
     if not os.path.isdir(RUNTIME_CODE_DIR):
         stage_runtime_code()
     print(f"  Running: agentcore deploy -y   (CLI {cli_version()}, region {config.AWS_REGION})", flush=True)
-    args = ['deploy', '-y'] + (['-v'] if verbose else [])
+    args = ['deploy'] + (['-v'] if verbose else [])
     run(*args)
 
 

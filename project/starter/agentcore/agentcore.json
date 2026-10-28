@@ -19,7 +19,66 @@
       "protocol": "HTTP",
       "instrumentation": {
         "enableOtel": false
-      }
+      },
+      "executionRoleArn": "arn:aws:iam::080723409216:role/udacity-agentcore-agentcore-role",
+      "envVars": [
+        {
+          "name": "AWS_REGION",
+          "value": "us-east-1"
+        },
+        {
+          "name": "PROJECT_NAME",
+          "value": "udacity-agentcore"
+        },
+        {
+          "name": "RETURNS_KB_ID",
+          "value": "5XYK0QJGD1"
+        },
+        {
+          "name": "SHIPPING_KB_ID",
+          "value": "Q8UXVFUCIS"
+        },
+        {
+          "name": "WARRANTY_KB_ID",
+          "value": "OUUU7SC8DE"
+        },
+        {
+          "name": "AGENT_LOG_GROUP",
+          "value": "/aws/bedrock/agentcore/udacity-agentcore"
+        },
+        {
+          "name": "GUARDRAIL_ID",
+          "value": "9oof3hyfyo2e"
+        },
+        {
+          "name": "GUARDRAIL_VERSION",
+          "value": "1"
+        },
+        {
+          "name": "AGENT_LOG_LEVEL",
+          "value": "INFO"
+        },
+        {
+          "name": "AGENT_LOG_TO_CLOUDWATCH",
+          "value": "true"
+        },
+        {
+          "name": "AGENT_TRACING_ENABLED",
+          "value": "true"
+        },
+        {
+          "name": "AGENT_TRACE_SAMPLING_RATE",
+          "value": "1.0"
+        },
+        {
+          "name": "ORCHESTRATOR_MODEL_ID",
+          "value": "amazon.nova-lite-v1:0"
+        },
+        {
+          "name": "WORKER_MODEL_ID",
+          "value": "amazon.nova-pro-v1:0"
+        }
+      ]
     }
   ],
   "memories": [],
@@ -33,6 +92,5 @@
   "abTests": [],
   "harnesses": [],
   "datasets": [],
-  "capacityProviders": [],
   "payments": []
 }
